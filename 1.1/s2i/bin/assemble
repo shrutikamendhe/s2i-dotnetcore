@@ -53,6 +53,7 @@ for SOURCE in $DOTNET_RESTORE_SOURCES; do
   RESTORE_OPTIONS="$RESTORE_OPTIONS --source $SOURCE"
 done
 
+echo $RESTORE_OPTIONS
 echo "---> Installing dependencies ..."
 dotnet restore $RESTORE_OPTIONS
 
